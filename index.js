@@ -1,16 +1,19 @@
 const button = document.querySelector('button')
+//const form = document.querySelector('form.headerForm')
 
 function changeHeader(){
     const h = document.querySelector('h1')
     h.textContent = "Hello!"
 }
 
-function changeHeader2(){
-    const h2 = document.querySelector('h1.header2')
-    h2.textContent = "This Header Has Been Changed"
+function changeSecondHeader(){
+    const h = document.querySelector('h1.header2')
+    h.textContent = "This Header Has Been Changed"
 }
 
-function addHeader(){
-    const h2 = document.querySelector('header2')
-    h2.textContent = "This Header Has Been Changed"
+//form.onsubmit = formHeader()
+
+function formHeader(text){
+    const h = document.querySelector('h1')
+    h.textContent = text
 }

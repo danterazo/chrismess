@@ -13,14 +13,14 @@
     <h1 class="header2">Xtern 2018</h1>
     <h1 class="header3">drazo</h1>
 
-    <button onclick="changeHeader()">Change First Header</button><br>
-    <button onclick="changeSecondHeader()">Change Second Header</button><br>
+    <button type='button' onclick="changeHeader()">Change First Header</button><br>
+    <button type='button' onclick="changeSecondHeader()">Change Second Header</button><br>
 
     <hr>
     <form class="headerForm">
         Change header to:<br>
-        <input type="text" name="headerText"><br>
-        <input type="submit" value="Change"><br>
+        <input type="text" name="headerText", id="headerText"><br>
+        <input type="button" onclick="changeHeader(document.getElementById('headerText').value)" value="Change">
     </form>
 
     </center>

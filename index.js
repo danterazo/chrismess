@@ -1,6 +1,5 @@
 const button = document.querySelector('button')
 const form = document.querySelector('form')
-const formText = document.querySelector('headerText')
 
 function changeHeader(text){
     const h = document.querySelector('h1')

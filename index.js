@@ -1,3 +1,1 @@
-console.log('It works!')
-console.warn('Trouble!')
-console.error('aw snap')
+const button = document.querySelector('button')

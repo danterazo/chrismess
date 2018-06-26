@@ -1,6 +1,15 @@
 # Chrismess
 The first project for Xtern Boootcamp 2018 Session 3. This project uses vanilla JavaScript/ES2015+.
 
+## Day 2 Homework
+* Add a second field to the form.
+* Display the value of that field in the list.
+    - Your choice (e.g. year of movie release)
+
+## Bonus Credit
+* Display the second field in a separate HTML element than the flick name.
+* See if you can then style it differently (CSS).
+
 ## Day 1 Homework
 * Make the button change the text of the heading (the "h1" tag).
 

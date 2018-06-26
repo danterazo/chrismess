@@ -13,6 +13,12 @@ function changeHeader(text) {
     }
 }
 
+// HW2:
+function addToList(text){
+    const list = document.querySelector('movies')
+	list.appendChild(item)
+}
+
 function changeSecondHeader() {
     const h = document.querySelector('h1.header2')
     h.textContent = "The second header has been changed!"

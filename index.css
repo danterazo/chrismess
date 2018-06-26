@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text|Oswald|Roboto');
 
 body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -10,7 +10,9 @@ ul {
 }
 
 .movieName{
-    font-style:italic
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 25px;
+    font-style: italic;
 }
 
 .movieYear{

@@ -1,7 +1,4 @@
-const button = document.querySelector('button')
-const form = document.querySelector('headerForm')
-const formButton = document.querySelector('formButton')
-
+// HW1
 function changeHeader(text) {
     const h = document.querySelector('h1')
     h.textContent = "The first header has been changed!"
@@ -14,9 +11,16 @@ function changeHeader(text) {
 }
 
 // HW2:
-function addToList(text){
-    const list = document.querySelector('movies')
-	list.appendChild(item)
+function addToList(item1, item2){
+    const list = document.getElementById('movieList')
+    const toAdd = item1 + " " + item2
+
+    //debugging:
+    console.log("item1: " + item1)
+    console.log("item2: " + item2)
+    console.log("toAdd: " + toAdd)
+
+	list.appendChild(toAdd)
 }
 
 function changeSecondHeader() {

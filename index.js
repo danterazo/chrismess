@@ -1,4 +1,5 @@
-const form = document.querySelector('form#movieForm')
+const form = document.querySelector('movieForm')
+const formButton = document.querySelector('formButton')
 
 // HW1
 function changeHeader(text) {
@@ -21,7 +22,7 @@ function changeSecondHeader() {
 function addToList(movieName) {
     console.log("movie: " + movieName) //debugging
 
-    const l = document.querySelector('#movieList')
+    const l = document.getElementById('movieList')
     const item = document.createElement('li')
     
     item.textContent = movieName

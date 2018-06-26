@@ -1,4 +1,6 @@
-// HW1
+const form = document.querySelector('form#movieForm')
+
+// HW1, deprecated
 function changeHeader(text) {
     const h = document.querySelector('h1')
     h.textContent = "The first header has been changed!"
@@ -11,19 +13,23 @@ function changeHeader(text) {
 }
 
 // HW2:
-function addToList(item1, item2){
-    const list = document.getElementById('movieList')
-    const toAdd = item1 + " " + item2
-
-    //debugging:
-    console.log("item1: " + item1)
-    console.log("item2: " + item2)
-    console.log("toAdd: " + toAdd)
-
-	list.appendChild(toAdd)
-}
+function addToList(ev) {
+    ev.preventDefault()
+    const f = ev.target
+  
+    const movieName = f.movieName.value
+    const item = document.createElement('li')
+    item.textContent = movieName
+  
+    const list = document.querySelector('#movieList')
+    list.appendChild(item)
+  
+    f.reset()
+  }
 
 function changeSecondHeader() {
     const h = document.querySelector('h1.header2')
     h.textContent = "The second header has been changed!"
 }
+
+form.addEventListener('submit', addToList)

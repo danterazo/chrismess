@@ -1,4 +1,5 @@
 # Chrismess
+The first project for Xtern Boootcamp 2018 Session 3
 
 ## Day 1 Homework
 * Make the button change the text of the heading (the "h1" tag).

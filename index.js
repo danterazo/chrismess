@@ -19,12 +19,15 @@ function changeSecondHeader() {
 }
 
 // HW2:
-function addToList(movieName) {
-    console.log("movie: " + movieName) //debugging
+function addToList() {
+    movieName = document.getElementById('form1').value
+    movieYear = document.getElementById('form2').value
+
+    //document.getElementById('form2').value
 
     const l = document.getElementById('movieList')
     const item = document.createElement('li')
     
-    item.textContent = movieName
+    item.textContent = movieName + " (" + movieYear + ")"
     l.appendChild(item)
   }

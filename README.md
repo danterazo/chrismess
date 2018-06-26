@@ -7,8 +7,19 @@ The first project for Xtern Boootcamp 2018 Session 3. This project uses vanilla 
     - Your choice (e.g. year of movie release)
 
 ## Bonus Credit
-* Display the second field in a separate HTML element than the flick name.
+* Display the second field in a separate HTML element than the flick name. For example:
+
+```html
+<li>
+    <span class="flickName">Jurassic Work</span>
+    <span class="year">2015</span>
+</li>
+```
+
 * See if you can then style it differently (CSS).
+
+## Super Mega Bonus Credit
+* Use more than one function.
 
 ## Day 1 Homework
 * Make the button change the text of the heading (the "h1" tag).

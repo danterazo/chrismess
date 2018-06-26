@@ -6,7 +6,7 @@ The first project for Xtern Boootcamp 2018 Session 3. This project uses vanilla 
 * Display the value of that field in the list.
     - Your choice (e.g. year of movie release)
 
-## Bonus Credit
+### Bonus Credit
 * Display the second field in a separate HTML element than the flick name. For example:
 
 ```html
@@ -16,9 +16,9 @@ The first project for Xtern Boootcamp 2018 Session 3. This project uses vanilla 
 </li>
 ```
 
-* See if you can then style it differently (CSS).
+* See if you can then style each field differently (CSS).
 
-## Super Mega Bonus Credit
+### Super Mega Bonus Credit
 * Use more than one function.
 
 ## Day 1 Homework

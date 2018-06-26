@@ -2,7 +2,7 @@
 The first project for Xtern Boootcamp 2018 Session 3. This project uses vanilla JavaScript/ES2015+.
 
 ## Day 2 Homework
-* Give the function 'changeHeading' a more accurate name
+* Give the function 'changeHeading' a more accurate name.
 * Add a second field to the form.
 * Display the value of that field in the list.
     - Your choice (e.g. year of movie release)

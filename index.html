@@ -21,7 +21,9 @@
     <hr>
     <form class="movieForm" id="movieForm" onsubmit="return false"><br>
         <input type="text" name="form1" id="form1" placeholder="Movie Title" autofocus><br>
-        <input type="text" name="form2" id="form2" onkeydown="if (event.keyCode == 13){document.getElementById('formButton').click()}" placeholder="Release Year">
+        <input type="text" name="form2" id="form2" 
+            onkeydown="if (event.keyCode == 13){document.getElementById('formButton').click()}"
+            placeholder="Release Year">
         <br>
         <input type="button" id="formButton" onclick="addToList()" value="Add to List">
     </form>

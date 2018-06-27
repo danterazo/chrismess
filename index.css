@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Markazi+Text|Oswald|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text|Oswald|Roboto|Galada');
 
 body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -6,6 +6,13 @@ body {
 }
 
 h1 {
+    font-family: 'Galada', sans-serif;
+    font-size: 100px;
+    margin-top: 40px;
+    color: white;
+}
+
+h2 {
     color: white;
 }
 
@@ -27,7 +34,9 @@ ul {
 }
 
 body {
-    background-image: url("assets/background.jpg");
+    background-image: url("assets/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
     width: 50%;
     display: block;
     margin: -2vw auto 0;

@@ -2,7 +2,7 @@ const form = document.querySelector('movieForm')
 const formButton = document.querySelector('formButton')
 const list = document.getElementById('movieList')
 
-// HW1
+// HW1:
 function changeHeader(text) {
     const h = document.querySelector('h1')
     h.textContent = "The first header has been changed!"
@@ -34,7 +34,7 @@ function addToList() {
     list.appendChild(item)
 }
 
-function addYearToList(item){
+function addYearToList(item) {
     const movieYear = document.getElementById('form2').value
     const year = document.createElement('span')
 
@@ -43,3 +43,12 @@ function addYearToList(item){
 
     item.appendChild(year)
 }
+
+// HW3:
+const movieEntry = {
+    movieName: 'x',
+    movieYear: 'y',
+}
+
+const chrisList = new movieEntry()
+console.log(chrisList)

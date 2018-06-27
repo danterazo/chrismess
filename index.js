@@ -23,22 +23,23 @@ function changeSecondHeader() {
 function addToList() {
     const movieName = document.getElementById('form1').value
     const name = document.createElement('span')
-    const br = document.createElement('br')
+    //const br = document.createElement('br')
+    const item = document.createElement('li')
     
     name.className = "movieName"
     name.textContent = movieName
 
-    list.appendChild(name)
-    addYearToList() // second function for "super mega bonus credit"
-    list.appendChild(br)
+    item.appendChild(name)
+    addYearToList(item) // second function for "super mega bonus credit"
+    list.appendChild(item)
 }
 
-function addYearToList(){
+function addYearToList(item){
     const movieYear = document.getElementById('form2').value
     const year = document.createElement('span')
 
     year.className = "movieYear"
     year.textContent = " (" + movieYear + ")"
 
-    list.appendChild(year)
+    item.appendChild(year)
 }

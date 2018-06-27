@@ -18,55 +18,27 @@ function changeSecondHeader(){
 	h.textContent = "The second header has been changed!"
 }
 
-// HW2:
+// HW3:
 function addToList(){
-	const movieName = document.getElementById('form1').value
 	const name = document.createElement('span')
+	const year = document.createElement('span')
 	const item = document.createElement('li')
 
-	name.className = "movieName"
-	name.textContent = movieName
+	const movieEntry = {
+		movieName: document.getElementById('form1').value,
+		movieYear: document.getElementById('form2').value,
+	}
 
+	console.log("mName:" + movieEntry["movieName"])
+	console.log("mYear:" + movieEntry["movieYear"])
+
+	name.className = "movieName"
+	name.textContent = movieEntry["movieName"]
+	year.className = "movieYear"
+	year.textContent = ` (${movieEntry["movieYear"]})`
 	item.className = "movie"
+
 	item.appendChild(name)
-	addYearToList(item) // second function for "super mega bonus credit"
+	item.appendChild(year)
 	list.appendChild(item)
 }
-
-function addYearToList(item){
-	const movieYear = document.getElementById('form2').value
-	const year = document.createElement('span')
-
-	year.className = "movieYear"
-	year.textContent = " (" + movieYear + ")"
-
-	item.appendChild(year)
-}
-
-// HW3:
-class MovieList{
-	constructor(){
-		const form = document.querySelector('movieForm')
-	}
-
-	createSpan(name, text){
-		const span = document.createElement('span')
-		span.className = name
-		span.textContent = text
-		return span
-	}
-
-	prepareMovie(name){
-		const item = document.createElement('li')
-		item.className = "movie"
-	}
-}
-
-
-const movieEntry = {
-	movieName: 'x',
-	movieYear: 'y',
-}
-
-const chrisList = new MovieList()
-console.log(chrisList)

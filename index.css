@@ -2,6 +2,11 @@
 
 body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    color: white;
 }
 
 ul {
@@ -13,10 +18,12 @@ ul {
     font-family: 'Markazi Text', sans-serif;
     font-size: 25px;
     font-style: italic;
+    color: white;
 }
 
 .movieYear {
     font-family: 'Oswald', sans-serif;
+    color: white;
 }
 
 body {

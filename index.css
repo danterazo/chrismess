@@ -9,12 +9,12 @@ ul {
     list-style-position: inside;
 }
 
-.movieName{
+.movieName {
     font-family: 'Markazi Text', sans-serif;
     font-size: 25px;
     font-style: italic;
 }
 
-.movieYear{
+.movieYear {
     font-family: 'Oswald', sans-serif;
 }

@@ -5,14 +5,14 @@ body {
     color: white;
 }
 
-h1 {
-    font-family: 'Galada', sans-serif;
-    font-size: 100px;
+.header1 {
+    font-size: 80px;
     margin-top: 40px;
     color: white;
 }
 
-h2 {
+.header2 {
+    font-size: 50px;
     color: white;
 }
 

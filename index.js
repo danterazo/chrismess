@@ -29,6 +29,8 @@ function addToList() {
     name.className = "movieName"
     name.textContent = movieName
 
+    item.className = "movie"
+
     item.appendChild(name)
     addYearToList(item) // second function for "super mega bonus credit"
     list.appendChild(item)

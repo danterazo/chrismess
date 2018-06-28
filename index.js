@@ -54,7 +54,7 @@ function createMovieEntry(name, year, item){
 	//deleteButton.onclick = deleteEntry(name, array,item)
 
 	const favoriteButton = document.createElement('button')
-	favoriteButton.className = "deleteButton"
+	favoriteButton.className = "favoriteButton"
 	favoriteButton.type = "delete"
 	favoriteButton.textContent = "\u2605" // black star
 
@@ -65,6 +65,7 @@ function createMovieEntry(name, year, item){
 	list.appendChild(item)
 }
 
+// add length to movie object, delete number vs. ID
 function favoriteEntry(name){
 	console.log("favorite entry" + name) // debugging
 	// movieArray[2] = true

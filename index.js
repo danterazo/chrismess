@@ -41,7 +41,8 @@ function addToList(){
 	item.className = "movie"
 	item.id = movieEntry["movieName"]
 
-	movieArray.push([movieEntry["movieName"], movieEntry["movieYear"]])
+	// array[movie name, movie title, favorite?]
+	movieArray.push([movieEntry["movieName"], movieEntry["movieYear"], false])
 	createMovieEntry(name, year, item)
 }
 
@@ -50,7 +51,7 @@ function createMovieEntry(name, year, item){
 	deleteButton.className = "deleteButton"
 	deleteButton.type = "delete"
 	deleteButton.textContent = "X"
-	//deleteButton.onclick = deleteEntry(name, item)
+	//deleteButton.onclick = deleteEntry(name, array,item)
 
 	const favoriteButton = document.createElement('button')
 	favoriteButton.className = "deleteButton"
@@ -64,7 +65,12 @@ function createMovieEntry(name, year, item){
 	list.appendChild(item)
 }
 
-function deleteEntry(name){
+function favoriteEntry(name){
+	console.log("favorite entry" + name) // debugging
+	// movieArray[2] = true
+}
+
+function deleteEntry(name, array){
 	name = this.name
 
 	console.log("delete entry" + name) // debugging
@@ -81,8 +87,9 @@ list.addEventListener('click', deleteEntry)
 
 /* TODO
  - Working delete button (utilizing array?)
- - removes from array too
- - Favorite button
- - CSS: differentiate favorites
+ 	- removes from array too
  - Favorites tag in array
+
+ - TO CHECK:
+ 	- CSS for Favorites
  */
